@@ -1,15 +1,15 @@
 <?php
 
-function getStudent($id) 
+function getBirthdays($id) 
 {
 
 }
 
-function getAllStudents() 
+function getAllBirthdays() 
 {
 	$db = openDatabaseConnection();
 
-	$sql = "SELECT * FROM students";
+	$sql = "SELECT * FROM birthdays";
 	$query = $db->prepare($sql);
 	$query->execute();
 
@@ -19,16 +19,16 @@ function getAllStudents()
 
 }
 
-function editStudent() 
+function editBirthday() 
 {
 
 }
 
-function deleteStudent($id) 
+function deleteBirthday($id) 
 {
 	$db = openDatabaseConnection();
 
-	$sql = "DELETE FROM students WHERE student_id=:id ";
+	$sql = "DELETE FROM birthdays WHERE id=:id ";
 	$query = $db->prepare($sql);
 	$query->execute(array(
 		':id' => $id
@@ -37,16 +37,17 @@ function deleteStudent($id)
 	$db = null;
 }
 
-function createStudent($firstname, $lastname, $gender) 
+function createBirthday($person, $day, $month, $year) 
 {
 	$db = openDatabaseConnection();
 
-	$sql = "INSERT INTO students(student_firstname, student_lastname, student_gender) VALUES (:firstname, :lastname, :gender)";
+	$sql = "INSERT INTO birthdays(person, day, month, year) VALUES (:person, :day, :month, :year)";
 	$query = $db->prepare($sql);
 	$query->execute(array(
-		':firstname' => $firstname,
-		':lastname' => $lastname,
-		':gender' => $gender
+		':person' => $person,
+		':day' => $day,
+		':month' => $month,
+		':year' => $year
 		));
 
 	$db = null;
