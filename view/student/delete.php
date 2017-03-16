@@ -1,1 +1,1 @@
-<h1>Dit is student/delete</h1>
+<h1>Dit is birthday/delete</h1>
