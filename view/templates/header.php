@@ -10,6 +10,8 @@
 <!-- Optional theme -->
 <link rel="stylesheet" href="<?= URL ?>css/bootstrap-theme.min.css">
 
+<link rel="stylesheet" href="./public/css/style.css">
+
 <!-- Latest compiled and minified JavaScript -->
 <script src="<?=  URL ?>js/bootstrap.min.js"></script>
 </head>
