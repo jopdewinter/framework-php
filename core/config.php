@@ -6,7 +6,6 @@ define('DB_NAME', 'lecture');
 define('DB_USER', 'root');
 define('DB_PASS', 'root');
 define('DB_CHARSET', 'utf8');
-
 define('URL_PUBLIC_FOLDER', 'public');
 define('URL_PROTOCOL', '//');
 define('URL_DOMAIN', $_SERVER['HTTP_HOST']);

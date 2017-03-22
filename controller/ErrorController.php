@@ -2,5 +2,5 @@
 
 function index()
 {
-	echo "Sorry, er is een error.";
+	echo "Er is een fout opgetreden probeer het opnieuw";
 }
