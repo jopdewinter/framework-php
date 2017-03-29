@@ -1,10 +1,10 @@
 <div class="container">
 	<form action="<?= URL ?>Birthday/createSave" method="post">
 	
-		<input type="text" name="dag" placeholder="dag">
-		<input type="text" name="maand" placeholder="maand">
-        <input type="text" name="jaar" placeholder="jaar">
-        <input type="text" name="naam" placeholder="jaar">
+		<input type="text" name="name" placeholder="naam">
+		<input type="text" name="day" placeholder="dag">
+        <input type="text" name="month" placeholder="maand">
+        <input type="text" name="year" placeholder="jaar">
         
 		<input type="submit" value="Verzenden">
 	
