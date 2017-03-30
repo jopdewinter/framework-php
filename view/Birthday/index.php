@@ -10,13 +10,13 @@
 		
 		<?php foreach ($brithdays as $birthday) { ?>
 		<tr>
-			<td><?= $birthday['birthday_id']; ?></td>
-			<td><?= $birthday['birthday_name']; ?></td>
-			<td><?= $birthday['birthday_day']; ?></td>
-			<td><?= $birthday['birthday_month']; ?></td>
-            <td><?= $birthday['birthday_year']; ?></td>
-			<td><a href="<?= URL ?>birthday/edit/<?= $birthday['birthday_id'] ?>">Edit</a></td>
-			<td><a href="<?= URL ?>birthday/delete/<?= $birthday['birthday_id'] ?>">Delete</a></td>
+			<td><?= $birthday['id']; ?></td>
+			<td><?= $birthday['name']; ?></td>
+			<td><?= $birthday['day']; ?></td>
+			<td><?= $birthday['month']; ?></td>
+            <td><?= $birthday['year']; ?></td>
+			<td><a href="<?= URL ?>birthday/edit/<?= $birthday['id'] ?>">Edit</a></td>
+			<td><a href="<?= URL ?>birthday/delete/<?= $birthday['id'] ?>">Delete</a></td>
 		</tr>
 		<?php } ?>
 
