@@ -1,4 +1,5 @@
 <?php
+
 function route()
 {
 	$url = splitUrl();
@@ -28,6 +29,7 @@ function route()
 	
 	}
 }
+
 function splitUrl()
 {
 	if (isset($_GET['url'])) {

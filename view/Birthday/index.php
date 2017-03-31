@@ -1,25 +1,26 @@
 <div class="container">
-	<table border="1">
+
+	<h1>Kalender</h1>
+	<table border="1" class="table table-striped">
 		<tr>
-			<th>#</th>
-			<th>naam</th>
-			<th>dag</th>
-			<th>maand</th>
-            <th>jaar</th>
+			<th>Naam</th>
+			<th>Dag</th>
+			<th>Maand</th>
+			<th>Jaar</th>
+			<th colspan="2">Actie</th>
 		</tr>
 		
-		<?php foreach ($brithdays as $birthday) { ?>
+		<?php foreach ($birthdays as $birthday) { ?>
 		<tr>
-			<td><?= $birthday['id']; ?></td>
-			<td><?= $birthday['name']; ?></td>
+			<td><?= $birthday['person']; ?></td>
 			<td><?= $birthday['day']; ?></td>
 			<td><?= $birthday['month']; ?></td>
-            <td><?= $birthday['year']; ?></td>
-			<td><a href="<?= URL ?>birthday/edit/<?= $birthday['id'] ?>">Edit</a></td>
-			<td><a href="<?= URL ?>birthday/delete/<?= $birthday['id'] ?>">Delete</a></td>
+			<td><?= $birthday['year']; ?></td>
+			<td><a href="<?= URL ?>birthday/edit/<?= $birthday['id'] ?>">Aanpassen</a></td>
+			<td><a href="<?= URL ?>birthday/delete/<?= $birthday['id'] ?>">Verwijderen</a></td>
 		</tr>
 		<?php } ?>
 
 	</table>
-	<a href="<?= URL ?>birthday/create">Toevoegen</a>
+	<a href="<?= URL ?>birthday/create">+ Toevoegen</a>
 </div>
