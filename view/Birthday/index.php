@@ -1,7 +1,7 @@
 <div class="container">
 
 	<h1>Kalender</h1>
-	<table border="1" class="table table-striped">
+	<table border="1">
 		<tr>
 			<th>Naam</th>
 			<th>Dag</th>
